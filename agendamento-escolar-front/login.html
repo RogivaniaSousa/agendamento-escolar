@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Agendamento Escolar</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<main class="login-container">
+  <section class="login-card">
+    <h1>Agendamento Escolar</h1>
+    <p id="subtitulo">Entre com sua conta de professor.</p>
+
+    <form id="formLogin">
+      <div id="campoNome" class="oculto">
+        <label>Nome</label>
+        <input type="text" id="nome" placeholder="Seu nome">
+      </div>
+
+      <label>E-mail</label>
+      <input type="email" id="email" placeholder="professor@teste.com" required>
+
+      <label>Senha</label>
+      <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+      <button type="submit" id="botaoEnviar">Entrar</button>
+    </form>
+
+    <button class="botao-secundario" id="alternarModo">
+      Criar uma conta
+    </button>
+
+    <p id="mensagem"></p>
+  </section>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h2>Agendamento Escolar</h2>
+    </div>
+
+    <div class="usuario">
+
+        <span id="nomeProfessor"></span>
+
+        <button id="sair">
+            Sair
+        </button>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="cards">
+
+<div class="card card-verde">
+
+<h3>Projetores</h3>
+
+<h1 id="qtdProjetores">0</h1>
+
+<p>Disponíveis</p>
+
+</div>
+
+<div class="card card-azul">
+
+<h3>Caixa de Som</h3>
+
+<h1 id="qtdCaixas">0</h1>
+
+<p>Disponível</p>
+
+</div>
+
+<div class="card card-amarelo">
+
+<h3>Ambientes</h3>
+
+<h1 id="qtdAmbientes">0</h1>
+
+<p>Cadastrados</p>
+
+</div>
+
+</section>
+
+<section class="acoes">
+
+<a href="agendamento.html" class="botao">
+
+Novo Agendamento
+
+</a>
+
+</section>
+
+<section class="painel">
+
+<div class="box">
+
+<h2>Ambientes</h2>
+
+<div id="listaAmbientes"></div>
+
+</div>
+
+<div class="box">
+
+<h2>Agendamentos</h2>
+
+<div id="listaAgendamentos"></div>
+
+</div>
+
+</section>
+
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

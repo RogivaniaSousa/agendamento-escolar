@@ -1,0 +1,175 @@
+.topo {
+  background: #2e7d32;
+  color: white;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo h1 {
+  font-size: 24px;
+}
+
+.topo a {
+  background: white;
+  color: #2e7d32;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 850px;
+  margin: 35px auto;
+  padding: 0 20px;
+}
+
+.card-form {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.10);
+}
+
+.card-form h2 {
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  color: #666;
+  margin-bottom: 28px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.sala-info {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 13px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.aulas-grid,
+.equipamentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.aula-card,
+.check-card {
+  background: #f5f5f5;
+  border: 2px solid transparent;
+  padding: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.check-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aula-card:hover,
+.check-card:hover {
+  border-color: #2e7d32;
+  background: #e8f5e9;
+}
+
+.check-card small {
+  color: #2e7d32;
+  font-size: 12px;
+}
+
+.indisponivel {
+  opacity: 0.55;
+  cursor: not-allowed;
+  background: #eeeeee;
+}
+
+.indisponivel small {
+  color: #d32f2f;
+}
+
+.aviso {
+  background: #fff8e1;
+  color: #8a6d00;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+button {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #256629;
+}
+
+#mensagem {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .topo {
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .card-form {
+    padding: 22px;
+  }
+
+  .container {
+    margin: 20px auto;
+  }
+}

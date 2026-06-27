@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Agendamento</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/agendamento.css">
+</head>
+<body>
+
+<header class="topo">
+  <h1>Novo Agendamento</h1>
+  <a href="dashboard.html">Voltar</a>
+</header>
+
+<main class="container">
+  <section class="card-form">
+    <h2>Preencha os dados da reserva</h2>
+    <p class="subtitulo">Escolha a turma, a data, as aulas e veja a disponibilidade automaticamente.</p>
+
+    <form id="formAgendamento">
+      <label>Tipo de agendamento</label>
+      <select id="tipoAgendamento">
+        <option value="equipamento">Equipamento para sala da turma</option>
+        <option value="ambiente">Ambiente especial</option>
+      </select>
+
+      <label>Turma</label>
+      <select id="turma" required></select>
+
+      <div id="salaTurma" class="sala-info"></div>
+
+      <div id="campoAmbiente" class="oculto">
+        <label>Ambiente especial</label>
+        <select id="ambiente"></select>
+      </div>
+
+      <label>Data</label>
+      <input type="date" id="data" required>
+
+      <label>Aulas</label>
+      <div id="listaAulas" class="aulas-grid"></div>
+
+      <div id="avisoDisponibilidade" class="aviso oculto"></div>
+
+      <label>Disciplina</label>
+      <input type="text" id="disciplina" placeholder="Ex: Matemática" required>
+
+      <label>Equipamentos</label>
+      <div class="equipamentos-grid">
+        <label class="check-card" id="cardProjetor">
+          <input type="checkbox" id="projetor">
+          <span>Projetor</span>
+          <small id="statusProjetor">Disponível</small>
+        </label>
+
+        <label class="check-card" id="cardCaixaSom">
+          <input type="checkbox" id="caixaSom">
+          <span>Caixa de som</span>
+          <small id="statusCaixaSom">Disponível</small>
+        </label>
+      </div>
+
+      <label>Observação</label>
+      <textarea id="observacao" placeholder="Opcional"></textarea>
+
+      <button type="submit">Confirmar Agendamento</button>
+
+      <p id="mensagem"></p>
+    </form>
+  </section>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/agendamento.js"></script>
+</body>
+</html>
